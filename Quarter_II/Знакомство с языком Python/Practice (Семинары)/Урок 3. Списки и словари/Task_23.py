@@ -14,7 +14,7 @@ counter = 0
 
 for i in range(len(num_list) - 1):
     if num_list[i + 1] > num_list[i]:
-        print(num_list[i + 1])
         counter += 1
 
-print(counter)
+print(f"{num_list}")
+print(f"Количество больших чисел = {counter}")
