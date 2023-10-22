@@ -14,7 +14,6 @@
 # Output: 13
 
 text = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure. So if she sells sea shells on the sea shore I'm sure that the shells are sea shore      shells"
-words = text.lower().replace('.', ' ').split()
-unic_words = set(words)
+unic_words = set(text.lower().replace('.', ' ').split())
 
 print(len(unic_words))
