@@ -27,15 +27,28 @@
 # print(*find_farthest_orbit(orbits))
 
 #     Вывод:
-# 6 6
+# 2.5, 10
 
-import math
+#---------------------------------------------------------------МОЁ_РЕШЕНИЕ--------------------------------------------------------------------------
 
-def find_farthest_orbit(list_of_orbits):
-    list_of_square = list(map(lambda el: math.pi * el[0] * el[1], list_of_orbits))
-    return orbits[list_of_square.index(max((list_of_square)))]
-    # return [(list_of_square.index(max((list_of_square))))]
+# def find_farthest_orbit(list_of_orbits):
+#     # list_of_square = list(map(lambda el: math.pi * el[0] * el[1], list_of_orbits))
+#     # return orbits[list_of_square.index(max((list_of_square)))]
+#     maximum = max(list_of_orbits, key= lambda x: x[0] * x[1] * (x[0] != x[1]))
+#     return maximum
 
+#-------------------------------------------------------------РЕШЕНИЕ_ПРЕПОДА------------------------------------------------------------------------
 
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(*find_farthest_orbit(orbits))
+print(max(orbits, key= lambda x: x[0] * x[1] * (x[0] != x[1])))
+
+
+
+
+
+
+# def find_farthest_orbit(list_of_orbits):
+#     farthest = max(map(lambda el: math.pi * el[0] * el[1], list_of_orbits))
+#     return filter(lambda x: x == farthest, list_of_orbits)
+
+    # return list_of_orbits.remove(list_of_square.index)
