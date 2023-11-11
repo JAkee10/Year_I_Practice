@@ -19,28 +19,32 @@
 # Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 # Output: [8,9,9,9,0,0,0,1]
 
-l1 = [9,9,9,9,9,9,9]
-l2 = [9,9,9,9]
+# l1 = [9,9,9,9,9,9,9]
+# l2 = [9,9,9,9]
     
 
 
-def addTwoNumbers(l1, l2):
-    num1 = ''
-    for i in range(len(l1) - 1, -1, -1):
-        num1 += str(l1[i])
+# def addTwoNumbers(l1, l2):
+#     num1 = ''
+#     for i in range(len(l1) - 1, -1, -1):
+#         num1 += str(l1[i])
 
 
-    num2 = ''
-    for i in range(len(l2) - 1, -1, -1):
-        num2 += str(l2[i])
+#     num2 = ''
+#     for i in range(len(l2) - 1, -1, -1):
+#         num2 += str(l2[i])
 
 
-    num1 = int(num1)
-    num2 = int(num2)
+#     num1 = int(num1)
+#     num2 = int(num2)
 
-    res = [int(x) for x in str(num1 + num2)]
-    return res[::-1]
+#     res = [int(x) for x in str(num1 + num2)]
+#     return res[::-1]
 
-print(addTwoNumbers(l1, l2))
+# print(addTwoNumbers(l1, l2))
 
-result = l1
+# result = l1
+
+with open('test.txt', 'w', encoding= 'utf-8') as data:
+    data.write("line 1\n")
+    data.write('line 2\n')
