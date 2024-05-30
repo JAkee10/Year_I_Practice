@@ -1,1 +1,1 @@
-# Year I : All study content
+# Year I : All (Python) study content
